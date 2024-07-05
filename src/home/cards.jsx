@@ -14,7 +14,7 @@ const Cards = () => {
   return (
     <div className="app grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-3 ">
       <Card imgsrc={graph} title="PathFinder" link="https://example.com/1" />
-      <Card imgsrc={Stroid} title="Astroid " link="https://example.com/2" />
+      <Card imgsrc={Stroid} title="Astroid " link="/War" />
       <Card imgsrc={sort} title="Sorting" link="https://example.com/2" />
       <Card imgsrc={queen} title="N-Queen" link="https://example.com/2" />
       <Card imgsrc={primes} title="Sieve" link="https://example.com/2" />
