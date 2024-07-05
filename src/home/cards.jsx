@@ -18,7 +18,7 @@ const Cards = () => {
       <Card imgsrc={sort} title="Sorting" link="https://example.com/2" />
       <Card imgsrc={queen} title="N-Queen" link="https://example.com/2" />
       <Card imgsrc={primes} title="Sieve" link="https://example.com/2" />
-      <Card imgsrc={convex} title="Seaching" link="https://example.com/2" />
+      <Card imgsrc={convex} title="Seaching" link="/Search" />
       {/* Add more Card components as needed */}
     </div>
   );

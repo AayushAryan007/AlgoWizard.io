@@ -1,0 +1,23 @@
+span#author {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container-fluid {
+  align-items: center;
+}
+span#appName {
+  font-size: 25px;
+  font-weight: bold; /* Corrected from font-style to font-weight for bold */
+  color: rgb(255, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 201, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 88%
+  );
+  -webkit-background-clip: text; /* Ensures gradient only applies to text */
+  -webkit-text-fill-color: transparent; /* Ensures text remains visible */
+  margin-left: auto;
+  margin-right: auto;
+}
