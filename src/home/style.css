@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow: hidden;
+}
+.type {
+  width: 100%; /* Maintain full width */
+  text-align: center;
+  font-family: "Roboto Slab ExtraLight";
+}
+
+.neonText {
+  animation: flicker 2.5s infinite alternate;
+  color: #fff; /* White text for neon effect */
+}
+
+.fonty {
+  font-family: "Playwrite US Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Neon Text Color Options (optional) */
+.neonText-yellow {
+  color: #fff; /* White text for neon effect */
+  text-shadow: 0 0 2px #fff, /* Reduced further for inner glow */ 0 0 5.5px #fff,
+    /* Reduced from 11px (0.5 * 11) */ 0 0 9.5px #fff,
+    /* Reduced from 19px (0.5 * 19) */ 0 0 20px rgb(222, 224, 87),
+    /* Reduced further */ 0 0 40px rgb(222, 224, 87),
+    /* Reduced significantly */ 0 0 45px rgb(222, 224, 87),
+    /* Reduced further */ 0 0 50px rgb(222, 224, 87),
+    /* Reduced significantly */ 0 0 60px rgb(222, 224, 87); /* Reduced further */
+}
+
+/* Heading and Global Styling */
+h1 {
+  font-size: 4.2rem;
+}
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
+      0 0 40px rgb(222, 224, 87), 0 0 80px rgb(222, 224, 87),
+      0 0 90px rgb(222, 224, 87), 0 0 100px rgb(222, 224, 87),
+      0 0 150px rgb(222, 224, 87);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+.z-0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black; /* Creates a tiling effect */
+  z-index: -1; /* Optional, place behind content */
+}
+/* .gradient-background {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 201, 0, 1) 0%,
+    rgba(205, 86, 6, 1) 100%
+  );
+} */
+.gradient-background {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 201, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 88%
+  );
+}
+
+.content {
+  /* position: absolute; */
+  z-index: 2; /* Ensure content is in front of canvas */
+  /* Your other styles for content inside cards */
+}
+/* .page-footer {
+  background-color: #282c34;
+}
+.footer-copyright {
+  color: white;
+  background-color: black;
+}
+.greet {
+  text-align: center;
+  background-color: #434445;
+  color: white;
+  padding: 10px;
+} */
+
+/* src/style.css */
+
+.app {
+}
+
+.cards {
+  border-radius: 23px;
+  padding: 50px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.cards:hover {
+  box-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #fff,
+    0 0 10px rgb(222, 224, 87), 0 0 20px rgb(222, 224, 87),
+    0 0 25px rgb(222, 224, 87), 0 0 30px rgb(222, 224, 87),
+    0 0 40px rgb(222, 224, 87);
+}
+.card {
+  background-color: #000000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card_info {
+  padding: 1rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 201, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 88%
+  );
+}
+
+.card_category {
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.card_title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+button {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 201, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 88%
+  );
+
+  color: black;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.custom-scrollbar {
+  scrollbar-width: thin; /* "auto" hides the scrollbar in Firefox */
+  scrollbar-color: #000000 #66510b; /* color of the thumb and the track */
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #000000; /* color of the thumb */
+  border-radius: 10px; /* roundness of the thumb */
+}
+.content {
+  /* position: absolute; */
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #ff0202; /* color of the track */
+}
