@@ -16,11 +16,7 @@ const Cards = () => {
       <Card imgsrc={graph} title="PathFinder" link="/Maze" />
       <Card imgsrc={Stroid} title="Astroid " link="/War" />
       <Card imgsrc={sort} title="Sorting" link="/Sort" />
-      <Card
-        imgsrc={queen}
-        title="N-Queen"
-        link="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3dvcXM5NjB5ajBid3kydGJzODU3bjA3d3dsYTZ0ZTZnYjA3cjUxeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VS95jHa4UCOe4/200.webp"
-      />
+      <Card imgsrc={queen} title="Snake Game" link="/Snake" />
       <Card
         imgsrc={primes}
         title="Sieve"

@@ -5,7 +5,7 @@ import War from "./warstroid/Reacteroids";
 import Search from "./searching1/App";
 import Sort from "./sorting1/App";
 import Maze from "./maze/App";
-// import Tree from "./traversal/App";
+import Snake from "./Snake3/index";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/Search" element={<Search />} />
         <Route path="/Sort" element={<Sort />} />
         <Route path="/Maze" element={<Maze />} />
-        {/* <Route path="/Tree" element={<Tree />} /> */}
+        <Route path="/Snake" element={<Snake />} />
       </Routes>
     </Router>
   );
